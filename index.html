@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+     :root{
+      --Light-Cyan: hsl(193, 38%, 86%);
+      --Neon-Green: hsl(150, 100%, 66%);
+      --Grayish-Blue: hsl(217, 19%, 38%);
+      --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+      --Dark-Blue: hsl(218, 23%, 16%);
+     }
+
+     .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+     *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Manrope', sans-serif;
+     }
+        body{
+          height: 100vh;
+          width: 100vw;
+          overflow: hidden;
+
+        }
+
+        .container{
+         height: 100%;
+         width: 100%;
+         background: var(--Dark-Blue);
+         display: flex;
+         align-items: center;
+         justify-content: center;
+        }
+
+        .advice-container{
+          position: relative;
+          width: 600px;
+          background-color: var(--Dark-Grayish-Blue);
+          border-radius: 10px;
+          text-align: center;
+          padding: 50px;
+
+        }
+
+        .advice-id{
+          color: var(--Neon-Green);
+          margin-bottom: 30px;
+        }
+
+        .advice{
+          font-size: 28px;
+          color: var(--Light-Cyan);
+          margin-bottom: 30px;
+        }
+
+        .line{
+          margin-bottom: 30px;
+          width: 100%;
+        }
+        
+
+        .dice-container{
+          cursor: pointer;
+          height: 70px;
+          width: 70px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: var(--Neon-Green);
+          border-radius: 50%;
+          position: absolute;
+          bottom: 0;
+          left:50%;
+          transform: translate(-50%,50%);
+          
+        }
+
+        .dice-container:hover{
+          box-shadow: 0px 0px 23px 9px var(--Neon-Green);
+        }
+
+        @media screen and (max-width:620px) {
+          .advice-container{
+            width: 90%;
+            padding: 50px 30px;
+          }
+        }
+
+
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="advice-container">
+      <h6 class="advice-id"></h6>
+      <p class="advice"></p>
+
+        <img src="./images/pattern-divider-desktop.svg" alt="" class="line">
+
+      <div class="dice-container">
+        <img src="./images/icon-dice.svg" alt="">
+      </div>
+     
+    </div>
+
+  </div>
+
+
+  <!-- Advice ID goes here -->
+
+  "<!-- Advice text goes here -->"
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="./script.js"></script>
+</body>
+</html>
