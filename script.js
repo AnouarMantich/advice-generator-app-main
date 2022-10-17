@@ -10,7 +10,6 @@ const getAdvice=async function(){
     const {slip:{id},slip:{advice}}=data;
     adviceId.textContent=`ADVICE # ${id}`;
     adviceContainer.textContent=`"${advice}"`;
-    console.log(id ,advice);
     };
 
     getAdvice();
